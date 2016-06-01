@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Converter</string>
+
+    <string name="feet">Feet:</string>
+    <string name="enter_feet">Enter feet</string>
+
+    <string name="inches">Inches:</string>
+    <string name="enter_inches">Enter inches</string>
+
+    <string name="cent">Centimeters:</string>
+
+    <string name="calc">CALCULATE</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>

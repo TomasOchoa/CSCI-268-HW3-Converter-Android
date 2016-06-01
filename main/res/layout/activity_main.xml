@@ -1,0 +1,107 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="Feet:"
+        android:id="@+id/feet"
+        android:textSize="25dp"
+        android:layout_alignBottom="@+id/edit_feet"
+        android:layout_alignLeft="@+id/inches"
+        android:layout_alignStart="@+id/inches"
+        android:layout_marginBottom="23dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:text="@string/inches"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/inches"
+        android:textSize="25sp"
+        android:textIsSelectable="true"
+        android:layout_alignBottom="@+id/edit_inches"
+        android:layout_alignLeft="@+id/calculate"
+        android:layout_alignStart="@+id/calculate"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:text="@string/cent"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/cent"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/calculate"
+        android:layout_alignStart="@+id/calculate"
+        android:layout_marginBottom="27dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/output"
+        android:background="#e3e3e3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/calculate"
+        android:layout_alignEnd="@+id/calculate"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:hint="@string/enter_feet"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/edit_feet"
+        android:background="#e3e3e3"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edit_inches"
+        android:layout_alignStart="@+id/edit_inches"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:hint="@string/enter_inches"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:id="@+id/edit_inches"
+        android:background="#e3e3e3"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/calculate"
+        android:layout_alignRight="@+id/calculate"
+        android:layout_alignEnd="@+id/calculate"
+        android:inputType="number"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:imeOptions="actionDone"
+        />
+
+    <Button
+        android:text="@string/calc"
+        android:layout_width="310dp"
+        android:layout_height="100dp"
+        android:id="@+id/calculate"
+        android:background="#ff9e9e"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="128dp"
+        android:textSize="40sp"
+        />
+</RelativeLayout>
+
